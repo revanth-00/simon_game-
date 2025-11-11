@@ -7,5 +7,31 @@ linux/* linguist-vendored
 web/* linguist-vendored
 test/* linguist-vendored
 
-# Keep Dart files counted
+# Ignore generated files
+*.g.dart linguist-generated
+*.freezed.dart linguist-generated
+*.pb.dart linguist-generated
+*.pbjson.dart linguist-generated
+*.pbgrpc.dart linguist-generated
+*.pbenum.dart linguist-generated
+
+# Force Dart language detection
 *.dart linguist-language=Dart
+lib/* linguist-language=Dart
+
+# Ignore C++ files from platform folders
+android/**/*.cpp linguist-vendored
+android/**/*.cc linguist-vendored
+android/**/*.h linguist-vendored
+ios/**/*.cpp linguist-vendored
+ios/**/*.cc linguist-vendored
+ios/**/*.h linguist-vendored
+windows/**/*.cpp linguist-vendored
+windows/**/*.cc linguist-vendored
+windows/**/*.h linguist-vendored
+macos/**/*.cpp linguist-vendored
+macos/**/*.cc linguist-vendored
+macos/**/*.h linguist-vendored
+linux/**/*.cpp linguist-vendored
+linux/**/*.cc linguist-vendored
+linux/**/*.h linguist-vendored
