@@ -1,0 +1,11 @@
+# Tell GitHub Linguist to ignore native platform code
+android/* linguist-vendored
+ios/* linguist-vendored
+windows/* linguist-vendored
+macos/* linguist-vendored
+linux/* linguist-vendored
+web/* linguist-vendored
+test/* linguist-vendored
+
+# Keep Dart files counted
+*.dart linguist-language=Dart
